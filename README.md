@@ -1,14 +1,13 @@
 # go_todo_clean_architecture
-clean architectureを用いたTodoアプリ
+Todo App using clean architecture 
 ![CleanArchitecture](https://user-images.githubusercontent.com/74758734/214624828-b7bf6b78-007c-4fc8-a66c-f84f4db7901d.jpeg)
 
 
-# 開発環境構築手順
+# Built　develop environment
 
-dir直下で、
-``docker compose up``
+1. ``docker compose up``
 
-# 使用ライブラリ
+# Using Library
 - Echo(https://echo.labstack.com/): Web framework
 - Gorm(https://gorm.io/ja_JP/): ORM
 - Air(https://github.com/cosmtrek/air): Live reload for Golang
