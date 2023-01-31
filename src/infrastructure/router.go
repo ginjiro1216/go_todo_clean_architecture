@@ -1,14 +1,17 @@
-package main
+package infrastructure
 
 import (
 	"fmt"
-	"net/http"
-
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
+	"net/http"
 )
 
-func main() {
+func Init() {
 	e := echo.New()
+
+	e.Use(middleware.Logger())
+	e.Use(middleware.Recover())
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, test())
 	})

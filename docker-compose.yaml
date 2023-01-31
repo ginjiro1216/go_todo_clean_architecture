@@ -19,7 +19,7 @@ services:
       - TZ=Asia/Tokyo
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=platform_app
+      - POSTGRES_DB=go_todo
     volumes:
       - go-todo-ca-postgres-data:/var/lib/postgresql/data
     ports:
