@@ -19,6 +19,6 @@ func Init() {
 }
 
 func test() string {
-	fmt.Println("akdsjf")
+	fmt.Println("djf")
 	return "Test"
 }

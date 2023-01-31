@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   web:
+    container_name: web
     build:
       context: .
       dockerfile: docker/app/Dockerfile
@@ -14,15 +15,16 @@ services:
     depends_on:
       - db
   db:
+    container_name: db
     image: postgres:14.1-alpine3.14
     environment:
       - TZ=Asia/Tokyo
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=go_todo
+      - POSTGRES_DB=postgres
     volumes:
       - go-todo-ca-postgres-data:/var/lib/postgresql/data
     ports:
-      - 7777:7777
+      - 5321:5432
 volumes:
   go-todo-ca-postgres-data:
