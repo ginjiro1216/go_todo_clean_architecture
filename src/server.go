@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/ginjiro1216/go_todo_clean_architecture/domain"
-	"github.com/ginjiro1216/go_todo_clean_architecture/infrastructure"
+	"go_todo/domain"
+	"go_todo/infrastructure"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

@@ -1,4 +1,4 @@
-module github.com/ginjiro1216/go_todo_clean_architecture
+module go_todo
 
 go 1.19
 
