@@ -2,7 +2,7 @@ package main
 
 import (
 	"go_todo/domain"
-	"go_todo/infrastructure"
+	"go_todo/infrastructure/routers"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -20,7 +20,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	infrastructure.Init()
+	routers.Init()
 }
 
 func dbinit() {
