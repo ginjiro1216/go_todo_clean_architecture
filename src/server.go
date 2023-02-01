@@ -15,7 +15,7 @@ var (
 )
 
 func main() {
-	dbinit()
+	dbInit()
 	_, err = gorm.Open(postgres.Open(dsn), dbConfig)
 	if err != nil {
 		panic(err)
@@ -23,7 +23,7 @@ func main() {
 	routers.Init()
 }
 
-func dbinit() {
+func dbInit() {
 	db, err = gorm.Open(postgres.Open(dsn), dbConfig)
 	if err != nil {
 		panic(err)
