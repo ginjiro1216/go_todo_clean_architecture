@@ -15,7 +15,6 @@ var (
 )
 
 func main() {
-
 	dbInit()
 	_, err = gorm.Open(postgres.Open(dsn), dbConfig)
 	if err != nil {
